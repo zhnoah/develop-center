@@ -10,17 +10,32 @@ class Stack extends Component {
         this.state = {
         }
 
+        let items = {
+            'node': {
+                'a': 1, 
+                'b': 2
+            },
+            'npm': {
+                'a': 3,
+                'b': 4
+            }
+        }
+
         // DB
         this.db = localforage.createInstance({
-            name: 'test db',
+            name: 'stack db',
             driver: localforage.INDEXEDDB
         })
 
-        // 写
-        this.db.setItem('key', 'Hello, IndexedDB')
+        // 批量写
+        for(var key in items) {
+            if(items.hasOwnProperty(key)) {
+                this.db.setItem(key, items[key])
+            }
+        }
 
         // 读
-        this.db.getItem('key').then(res => {
+        this.db.getItem('node').then(res => {
             console.log(res)
         })
     }
