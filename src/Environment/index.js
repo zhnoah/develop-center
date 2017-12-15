@@ -64,8 +64,6 @@ class Environment extends Component {
                     @历史版本：
                     <a href="./software-center_v0.1/index.html" target="_blank">v0.1</a>&nbsp;
                     <a href="./software-center_v0.2/index.html" target="_blank">v0.2</a>
-                    <a href="./stacks_v0.1/index.html" target="_blank">v0.1</a>&nbsp;
-                    <a href="./stacks_v0.2/stacks.pdf" target="_blank">v0.2</a>
                 </p>
             </div>
         )
