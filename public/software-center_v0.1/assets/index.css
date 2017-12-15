@@ -1,0 +1,78 @@
+ul,
+dl {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #666;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.store:after,
+.cost:after {
+    vertical-align: super;
+    color: #666;
+    font-size: 9px;
+}
+
+.store:after {
+    content: "store";
+}
+
+.cost:after {
+    content: "￥";
+}
+
+.software-container {
+    min-height: 36px;
+}
+
+.software-container ul li {
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+.software-container ul li {
+    display: none;
+}
+
+.software-container dt {
+    width: 80px;
+    color: #666;
+}
+
+.software-container dd {
+    margin-left: 100px;
+}
+
+.title {
+    font-size: 14px;
+    color: #777;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

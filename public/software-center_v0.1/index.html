@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>软件中心</title>
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header clearfix">
+            <h2 class="pull-left">软件列表</h2>
+            <input type="radio" name="system" style="display: none;" value="1" checked="checked">
+            <div class="pull-right">
+                <label class="radio-inline">
+                    <input type="radio" name="system" value="0"> All
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="system" value="1" checked="checked"> Windows
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="system" value="2"> macOS
+                </label>
+            </div>
+        </div>
+        <div id="Softwares"></div>
+    </div>
+    <div class="container">
+        <div class="page-header">
+            <h2>相关设置</h2>
+        </div>
+        <ul>
+            <li class="title">Zeal</li>
+            <li><pre>
+// 用户贡献的 Docset 所在地址
+https://kapeli.com/feeds/zzz/user_contributed/build/npm/npm.tgz
+</pre>
+            </li>
+            <li class="title">Node.js</li>
+            <li><pre class="prettyprint">
+// 利用淘宝源全局安装 nrm
+npm i -g nrm --registry https://registry.npm.taobao.org
+
+PS: 利用 nrm 将 registry 切换为淘宝源
+
+// 使用 npm 安装全局包
+npm i -g gulp less browser-sync http-server nodemon pm2 eslint eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y eslint-config-airbnb eslint-config-airbnb-base vue-cli create-react-app express-generator koa-generator cordova react-native-cli svn
+
+// 查看已安装的全局包
+npm ls -g --depth=0
+
+// 更新全局包
+npm up -g
+
+// 启动一个可自动刷新页面的 http server
+browser-sync start --server --files "*"
+
+// 启用 ESLint 语法检查
+// 项目根目录创建 .eslintrc 文件，内容：
+{
+  "extends": "airbnb" // ES6+ and React
+  "extends": "airbnb/base" // ES6+
+  "extends": "airbnb/legacy" // ES5
+}
+</pre>
+            </li>
+            <li class="title">MongoDB</li>
+            <li><pre class="prettyprint">
+// 创建用于存放数据及日志的文件夹
+mkdir e:mongodb\data\db
+mkdir e:mongodb\data\log
+
+// 创建配置文件
+在 mongodb 文件夹下创建文件 mongod.cfg，内容：
+systemLog:
+  destination: file
+  path: e:\mongodb\data\log\mongod.log
+storage:
+  dbPath: e:\mongodb\data\db
+
+// 安装 MongoDB 服务
+"{Path}\bin\mongod.exe" --config "e:\mongodb\mongod.cfg" --install
+
+// 启动/停止
+net start MongoDB
+net stop MongoDB
+
+// 移除服务
+"{Path}\bin\mongod.exe" --remove
+</pre>
+            </li>
+        </ul>
+    </div>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/softwares.js"></script>
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+/* ------------- reset ---------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #666;
+}
+
+ul,
+dl {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.page-header {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.page-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.radio-inline {
+    cursor: pointer;
+}
+
+/* ------------- page ---------------- */
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.system-filter {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.store,
+.cost {
+    position: relative;
+}
+
+.store:after,
+.cost:after {
+    position: absolute;
+    top: -4px;
+    vertical-align: super;
+    color: #666;
+    font-size: 9px;
+}
+
+.store:after {
+    content: "A";
+}
+
+.cost:after {
+    content: "$";
+}
+
+.software-container {
+    line-height: 36px;
+}
+
+.software-container dt {
+    float: left;
+    width: 80px;
+    padding-left: 10px;
+    
+}
+
+.software-container dd {
+    margin-left: 90px;
+}
+
+.software-container ul li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.software-container ul li span,
+.software-container ul li a {
+    font-size: 13px;
+}

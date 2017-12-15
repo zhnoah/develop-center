@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>软件中心</title>
+    <link rel="stylesheet" href="./assets/index.css">
+</head>
+
+<body>
+
+    <div id="root" class="container">
+        <div class="page-header clearfix">
+            <h2 class="pull-left">软件中心</h2>
+            <div class="pull-right system-filter">
+                <label class="radio-inline">
+                    <input type="radio" name="system" v-model="system" value="win"> Windows
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="system" v-model="system" value="mac"> macOS
+                </label>
+            </div>
+        </div>
+        <div id="Softwares">
+            <dl class="dl-horizontal software-container" v-for="software in softwares[system]">
+                <dt>{{software.name}}：</dt>
+                <dd>
+                    <ul>
+                        <li v-for="item in software.items" v-bind:class="[item.classes, system]">
+                            <a v-if="item.url" v-bind:href="item.url" target="_blank">{{item.name}}</a>
+                            <span v-if="!item.url">{{item.name}}</span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <script src="./assets/vue.min.js"></script>
+    <script src="./assets/softwares.js"></script>
+    <script>
+        new Vue({
+            el: '#root',
+            data: {
+                system: 'win',
+                softwares: softwares
+            }
+        })
+    </script>
+</body>
+
+</html>
