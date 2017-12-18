@@ -9,12 +9,6 @@ import Navigation from './layout/Navigation'
 import Environment from './Environment'
 import Stack from './Stack'
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
-
 const About = () => (
   <div>
     <h2>About</h2>
@@ -26,8 +20,8 @@ const App = () => (
     <div>
       <Navigation />
       <div className="container">
-        <Route exact path="/" component={Home} />
-        <Route path="/environment" component={Environment} />
+        <Route exact path="/" component={Environment} />
+        <Route path="/tool" component={About} />
         <Route path="/stack" component={Stack} />
         <Route path="/tutorial" component={About} />
         <Route path="/code" component={About} />

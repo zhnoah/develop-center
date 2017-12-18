@@ -12,7 +12,7 @@ import {
 } from 'react-router-bootstrap'
 
 const Navigation = () => (
-    <Navbar inverse staticTop>
+    <Navbar inverse staticTop fluid>
         <Navbar.Header>
             <Navbar.Brand>
                 <Link to="/">Develop Center</Link>
@@ -22,10 +22,10 @@ const Navigation = () => (
         <Navbar.Collapse>
             <Nav>
                 <LinkContainer exact to="/">
-                    <NavItem eventKey={1}>Home</NavItem>
+                    <NavItem eventKey={1}>Environment</NavItem>
                 </LinkContainer>
-                <LinkContainer to="/environment">
-                    <NavItem eventKey={2}>Environment</NavItem>
+                <LinkContainer to="/tool">
+                    <NavItem eventKey={2}>Tool</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/stack">
                     <NavItem eventKey={3}>Stack</NavItem>

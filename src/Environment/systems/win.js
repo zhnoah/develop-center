@@ -1,3 +1,5 @@
+// import logo from './logo.png'
+
 export default [
     {
         id: 'basic',
@@ -16,7 +18,7 @@ export default [
                 id: 'shadowsocks',
                 caption: 'Shadowsocks',
                 loginFlag: false,
-                configFlag: true,
+                configFlag: false,
                 licenseFlag: false,
                 downloadFlag: false,
                 downloadUrl: 'https://github.com/shadowsocks/shadowsocks-windows',
@@ -27,8 +29,9 @@ export default [
                 loginFlag: true,
                 configFlag: false,
                 licenseFlag: false,
-                downloadFlag: true,
-                downloadUrl: 'https://www.google.com/chrome/browser/thankyou.html?standalone=1&platform=win&installdataindex=defaultbrowser',
+                downloadFlag: false,
+                downloadUrl: 'http://www.google.cn/chrome/browser/desktop/index.html',
+                standByDownloadUrl: 'https://www.google.com/chrome/browser/thankyou.html?standalone=1&platform=win&installdataindex=defaultbrowser',
                 optionUrl: '',
             }, {
                 id: 'winrar',
@@ -58,6 +61,18 @@ export default [
                 downloadUrl: 'https://www.microsoft.com/zh-CN/download/details.aspx?id=5201',
                 optionUrl: '',
             }, {
+                id: 'xunlei',
+                caption: '迅雷极速版',
+                loginFlag: true,
+                configFlag: false,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'cloud-disk',
+                optionUrl: '',
+            },
+        ],
+        more: [
+            {
                 id: 'enpass',
                 caption: 'Enpass',
                 loginFlag: true,
@@ -66,10 +81,7 @@ export default [
                 downloadFlag: false,
                 downloadUrl: 'https://www.enpass.io/downloads/',
                 optionUrl: '',
-            },
-        ],
-        more: [
-            {
+            }, {
                 id: 'player',
                 caption: 'QQ 影音',
                 loginFlag: false,
@@ -86,15 +98,6 @@ export default [
                 licenseFlag: false,
                 downloadFlag: false,
                 downloadUrl: 'http://www.wps.cn/',
-                optionUrl: '',
-            }, {
-                id: 'xunlei',
-                caption: '迅雷极速版',
-                loginFlag: true,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'cloud-disk',
                 optionUrl: '',
             }, {
                 id: 'pan',
@@ -148,6 +151,36 @@ export default [
                 downloadUrl: 'https://code.visualstudio.com/Download',
                 optionUrl: '',
             }, {
+                id: 'nvm',
+                caption: 'NVM for Windows',
+                loginFlag: false,
+                configFlag: true,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'https://github.com/coreybutler/nvm-windows',
+                optionUrl: '',
+            }, {
+                id: 'git',
+                caption: 'Git',
+                loginFlag: false,
+                configFlag: false,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'https://git-scm.com/downloads/',
+                optionUrl: '',
+            }, {
+                id: 'github',
+                caption: 'GitHub Desktop',
+                loginFlag: true,
+                configFlag: false,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'https://desktop.github.com/',
+                optionUrl: '',
+            },
+        ],
+        more: [
+            {
                 id: 'sublime',
                 caption: 'Sublime Text 3',
                 loginFlag: false,
@@ -166,24 +199,6 @@ export default [
                 downloadUrl: 'https://packagecontrol.io/installation',
                 optionUrl: '',
             }, {
-                id: 'nvm',
-                caption: 'NVM for Windows',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://github.com/coreybutler/nvm-windows',
-                optionUrl: '',
-            }, {
-                id: 'git',
-                caption: 'Git',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://git-scm.com/downloads/',
-                optionUrl: '',
-            }, {
                 id: 'svn',
                 caption: 'TortoiseSVN',
                 loginFlag: true,
@@ -191,18 +206,6 @@ export default [
                 licenseFlag: false,
                 downloadFlag: false,
                 downloadUrl: 'https://tortoisesvn.net/downloads.html',
-                optionUrl: '',
-            },
-        ],
-        more: [
-            {
-                id: 'github',
-                caption: 'GitHub Desktop',
-                loginFlag: true,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://desktop.github.com/',
                 optionUrl: '',
             }, {
                 id: 'fiddler',
@@ -230,6 +233,8 @@ export default [
                 downloadUrl: 'cloud-disk',
                 optionUrl: '',
             },
+        ],
+        more: [
             {
                 id: 'graphicsmagick',
                 caption: 'GraphicsMagick',
@@ -239,10 +244,7 @@ export default [
                 downloadFlag: false,
                 downloadUrl: 'ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/',
                 optionUrl: '',
-            },
-        ],
-        more: [
-            {
+            }, {
                 id: 'ai',
                 caption: 'Illustrator CS3',
                 loginFlag: false,
