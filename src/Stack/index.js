@@ -7,6 +7,7 @@ import localforage from 'localforage'
 
 import Pin from './react.pin'
 import './index.css'
+import Footer from '../common/Footer'
 import { stacks, categories } from './stacks'
 import Group from './Group'
 
@@ -49,7 +50,7 @@ class Stack extends Component {
     render() {
 
         return (
-            <div className="stack-container center-block">
+            <div className="container">
                 <form className="serah-form">
                     <input type="text" className="form-control" placeholder="Search" />
                 </form>
@@ -76,11 +77,11 @@ class Stack extends Component {
                         <li><a href="#">More</a></li>
                     </ul>
                 </nav>
-                <p className="stack-footer">
+                <Footer>
                     @历史版本：
                     <a href="./stacks_v0.1/index.html" target="_blank">v0.1</a>&nbsp;
                     <a href="./stacks_v0.2/stacks.pdf" target="_blank">v0.2</a>
-                </p>
+                </Footer>
                 {/* <div className="col-md-4">
                         <button type="button" className="btn btn-primary btn-block">新增</button>
                         <Pin />

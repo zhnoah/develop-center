@@ -1,0 +1,8 @@
+.btn-toolbar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-toolbar .btn-group {
+    float: initial;
+}

@@ -1,38 +1,9 @@
-.environment-container {
+.container {
     min-width: 320px;
     max-width: 640px;
 }
 
-.environment-container .btn-toolbar {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.environment-container .btn-toolbar .btn-group {
-    float: initial;
-}
-
-.environment-container .panel-title-group {
+.container .panel-title-group {
     /* 用于解决内容垂直对齐偏差 */
     font-size: 0;
-}
-
-.environment-container .environment-footer {
-    margin-top: 10px;
-    padding: 5px 0;
-    text-align: right;
-}
-
-.environment-container .environment-footer,
-.environment-container .environment-footer > * {
-    font-size: 12px;
-    color: #aaa;
-}
-
-.environment-container .environment-footer a {
-    text-decoration: none;
-}
-
-.environment-container .environment-footer a:hover {
-    color: #666;
 }

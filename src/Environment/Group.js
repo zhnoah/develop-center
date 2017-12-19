@@ -5,6 +5,7 @@ import {
 
 import './Group.css'
 import Item from './Item'
+import MoreButton from '../common/MoreButton'
 
 class Group extends Component {
     constructor(props) {
@@ -48,12 +49,15 @@ class Group extends Component {
                         })
                     }
                 </ListGroup>
+                {
+                    !!category.more.length && <MoreButton content="更多" open={this.state.open} />
+                }
                 <div className="text-center more">
                     {
                         !!category.more.length && (
                             <a role="button"
                                 onClick={this.handleToggle}
-                            > 可选
+                            > 更多
                             {this.state.open ? <span className="glyphicon glyphicon-menu-up" /> :
                                     <span className="glyphicon glyphicon-menu-down" />}
                             </a>

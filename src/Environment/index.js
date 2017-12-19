@@ -6,6 +6,8 @@ import {
 } from 'react-bootstrap'
 
 import './index.css'
+import ToggleBar from '../common/ToggleBar'
+import Footer from '../common/Footer'
 import winData from './systems/win'
 import macData from './systems/mac'
 import Group from './Group'
@@ -41,18 +43,20 @@ class Environment extends Component {
         if (this.state.system === 'win') data = winData
         if (this.state.system === 'mac') data = macData
 
+        const options = [{
+            id: 'win',
+            name: 'Windows'
+        }, {
+            id: 'mac',
+            name: 'macOS'
+        }]
+
         return (
-            <div className="environment-container center-block">
-                <ButtonToolbar>
-                    <ToggleButtonGroup type="radio"
-                        name="options"
-                        defaultValue={this.state.system}
-                        onChange={this.onChange}
-                    >
-                        <ToggleButton value="win">Windows</ToggleButton>
-                        <ToggleButton value="mac">macOS</ToggleButton>
-                    </ToggleButtonGroup>
-                </ButtonToolbar>
+            <div className="container">
+                <ToggleBar defaultValue={this.state.system}
+                    onChange={this.onChange}
+                    options={options}
+                />
                 {
                     data.map((category) => {
                         return (
@@ -60,11 +64,11 @@ class Environment extends Component {
                         )
                     })
                 }
-                <p className="environment-footer">
+                <Footer>
                     @历史版本：
                     <a href="./software-center_v0.1/index.html" target="_blank">v0.1</a>&nbsp;
                     <a href="./software-center_v0.2/index.html" target="_blank">v0.2</a>
-                </p>
+                </Footer>
             </div>
         )
     }
