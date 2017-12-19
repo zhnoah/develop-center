@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-import ToggleBar from '../common/ToggleBar'
+import TabButton from '../common/TabButton'
 
-class Tutorial extends Component {
+class Tutorial extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -31,7 +31,7 @@ class Tutorial extends Component {
 
         return (
             <div className="container">
-                <ToggleBar defaultValue={this.state.category}
+                <TabButton defaultValue={this.state.category}
                     onChange={this.onChange}
                     options={options}
                 />

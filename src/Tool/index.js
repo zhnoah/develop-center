@@ -2,11 +2,11 @@ import React from 'react'
 
 import TabButton from '../common/TabButton'
 
-class Code extends React.Component {
+class Tool extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            category: 'snippet'
+            category: 'doc'
         }
     }
 
@@ -19,14 +19,14 @@ class Code extends React.Component {
     render() {
 
         const options = [{
-            id: 'snippet',
-            name: '片段'
+            id: 'doc',
+            name: '文档'
         }, {
-            id: 'package',
-            name: '封装'
+            id: 'blog',
+            name: '博文'
         }, {
-            id: 'demo',
-            name: '作品'
+            id: 'note',
+            name: '笔记'
         }]
 
         return (
@@ -50,4 +50,4 @@ class Code extends React.Component {
     }
 }
 
-export default Code
+export default Tool

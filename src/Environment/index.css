@@ -2,8 +2,3 @@
     min-width: 320px;
     max-width: 640px;
 }
-
-.container .panel-title-group {
-    /* 用于解决内容垂直对齐偏差 */
-    font-size: 0;
-}

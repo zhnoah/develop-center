@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
     PanelGroup,
 } from 'react-bootstrap'
 import localforage from 'localforage'
 // import IDBExportImport from 'indexeddb-export-import'
 
-import Pin from './react.pin'
+// import Pin from './react.pin'
 import './index.css'
 import Footer from '../common/Footer'
 import { stacks, categories } from './stacks'
 import Group from './Group'
 
-class Stack extends Component {
+class Stack extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -72,11 +72,11 @@ class Stack extends Component {
                         })
                     }
                 </PanelGroup>
-                <nav aria-label="...">
+                {/* <nav aria-label="...">
                     <ul className="pager">
                         <li><a href="#">More</a></li>
                     </ul>
-                </nav>
+                </nav> */}
                 <Footer>
                     @历史版本：
                     <a href="./stacks_v0.1/index.html" target="_blank">v0.1</a>&nbsp;

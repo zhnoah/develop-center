@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Pin extends Component {
+class Pin extends React.Component {
     constructor(props) {
         super(props)
 

@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
     ListGroupItem,
 } from 'react-bootstrap'
 
 import './Item.css'
 
-class Item extends Component {
+class Item extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -31,7 +31,8 @@ class Item extends Component {
                         height="18"
                         src={this.state.imgUrl}
                         onError={this.onError}
-                        alt={software.caption} />
+                        alt={software.caption}
+                    />
                     <span className="panel-title-caption">{software.caption}</span>
                     {
                         software.loginFlag &&

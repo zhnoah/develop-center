@@ -1,18 +1,13 @@
-import React, { Component } from 'react'
-import {
-    ButtonToolbar,
-    ToggleButtonGroup,
-    ToggleButton,
-} from 'react-bootstrap'
+import React from 'react'
 
 import './index.css'
-import ToggleBar from '../common/ToggleBar'
+import TabButton from '../common/TabButton'
 import Footer from '../common/Footer'
 import winData from './systems/win'
 import macData from './systems/mac'
 import Group from './Group'
 
-class Environment extends Component {
+class Environment extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -53,7 +48,7 @@ class Environment extends Component {
 
         return (
             <div className="container">
-                <ToggleBar defaultValue={this.state.system}
+                <TabButton defaultValue={this.state.system}
                     onChange={this.onChange}
                     options={options}
                 />

@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
     ListGroup,
 } from 'react-bootstrap'
 
 import './Group.css'
 import Item from './Item'
-import MoreButton from '../common/MoreButton'
+import PanelTitle from '../common/PanelTitle'
+import MoreToggle from '../common/MoreToggle'
 
-class Group extends Component {
+class Group extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -29,7 +30,7 @@ class Group extends Component {
 
         return (
             <div>
-                <h2 className="title">{category.caption}&nbsp;({count})</h2>
+                <PanelTitle caption={category.caption} count={count} />
                 <ListGroup>
                     {
                         category.softwares.map((software) => {
@@ -50,20 +51,12 @@ class Group extends Component {
                     }
                 </ListGroup>
                 {
-                    !!category.more.length && <MoreButton content="更多" open={this.state.open} />
+                    !!category.more.length && <MoreToggle
+                        content="更多"
+                        open={this.state.open}
+                        handleToggle={this.handleToggle}
+                    />
                 }
-                <div className="text-center more">
-                    {
-                        !!category.more.length && (
-                            <a role="button"
-                                onClick={this.handleToggle}
-                            > 更多
-                            {this.state.open ? <span className="glyphicon glyphicon-menu-up" /> :
-                                    <span className="glyphicon glyphicon-menu-down" />}
-                            </a>
-                        )
-                    }
-                </div>
             </div>
         )
     }

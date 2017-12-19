@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
     // ListGroup,
     Panel,
     // ListGroupItem,
 } from 'react-bootstrap'
 
-class Group extends Component {
+class Group extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
