@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import './index.css'
 
@@ -28,6 +29,17 @@ class MoreToggle extends React.Component {
             </div>
         )
     }
+}
+
+MoreToggle.propTypes = {
+    handleToggle: PropTypes.func.isRequired,
+    content: PropTypes.string,
+    open: PropTypes.bool,
+}
+
+MoreToggle.defaultProps = {
+    content: '更多',
+    open: false,
 }
 
 export default MoreToggle

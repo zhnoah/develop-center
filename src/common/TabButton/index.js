@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {
     ButtonToolbar,
     ToggleButtonGroup,
@@ -23,5 +24,14 @@ const TabButton = (props) => (
         </ToggleButtonGroup>
     </ButtonToolbar>
 )
+
+TabButton.propTypes = {
+    defaultValue: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]),
+    onChange: PropTypes.func,
+    options: PropTypes.array,
+}
 
 export default TabButton
