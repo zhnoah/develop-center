@@ -1,53 +1,24 @@
 import React from 'react'
 
-import TabButton from '../common/TabButton'
+import {
+    categories,
+    tools,
+} from './data'
+import Group from './Group'
 
-class Tool extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            category: 'doc'
+const Tool = () => (
+    <div className="container">
+        {
+            categories.map((category) => {
+                return (
+                    <Group key={category.id}
+                        category={category}
+                        tools={tools}
+                    />
+                )
+            })
         }
-    }
-
-    onChange(category) {
-        this.setState({
-            category
-        })
-    }
-
-    render() {
-
-        const options = [{
-            id: 'doc',
-            name: '文档'
-        }, {
-            id: 'blog',
-            name: '博文'
-        }, {
-            id: 'note',
-            name: '笔记'
-        }]
-
-        return (
-            <div className="container">
-                <TabButton defaultValue={this.state.category}
-                    onChange={this.onChange}
-                    options={options}
-                />
-                {/* {
-                    data.map((category) => {
-                        return (
-                            <Group key={category.id} category={category} />
-                        )
-                    })
-                } */}
-                {/* <p className="environment-footer">
-
-                </p> */}
-            </div>
-        )
-    }
-}
+    </div>
+)
 
 export default Tool

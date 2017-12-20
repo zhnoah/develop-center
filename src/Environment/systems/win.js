@@ -142,13 +142,13 @@ export default [
         caption: '前端开发',
         softwares: [
             {
-                id: 'vscode',
-                caption: 'Visual Studio Code',
+                id: 'git',
+                caption: 'Git',
                 loginFlag: false,
-                configFlag: true,
+                configFlag: false,
                 licenseFlag: false,
                 downloadFlag: false,
-                downloadUrl: 'https://code.visualstudio.com/Download',
+                downloadUrl: 'https://git-scm.com/downloads/',
                 optionUrl: '',
             }, {
                 id: 'nvm',
@@ -160,13 +160,13 @@ export default [
                 downloadUrl: 'https://github.com/coreybutler/nvm-windows',
                 optionUrl: '',
             }, {
-                id: 'git',
-                caption: 'Git',
+                id: 'vscode',
+                caption: 'Visual Studio Code',
                 loginFlag: false,
-                configFlag: false,
+                configFlag: true,
                 licenseFlag: false,
                 downloadFlag: false,
-                downloadUrl: 'https://git-scm.com/downloads/',
+                downloadUrl: 'https://code.visualstudio.com/Download',
                 optionUrl: '',
             }, {
                 id: 'github',
