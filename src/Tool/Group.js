@@ -6,50 +6,33 @@ import {
 
 import PanelTitle from '../common/PanelTitle'
 
-class Group extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            count: 0
-        }
-    }
-
-    render() {
-
-        const { id, caption } = this.props.category
-
-        return (
-            <React.Fragment>
-                <PanelTitle caption={caption} count={this.state.count} />
-                <ListGroup>
-                    {
-                        this.props.tools.map(tool => {
-
-                            if (tool.categories.indexOf(id) >= 0) {
-                                return (
-                                    <ListGroupItem key={tool.id}
-                                        className="clearfix"
-                                        href={tool.url}
-                                        target="_blank"
-                                    >
-                                        <div className="pull-left">
-                                            <b>{tool.name}</b>
-                                        </div>
-                                        <div className="pull-right">
-                                            <small className="text-muted">{tool.describe}</small>
-                                        </div>
-                                    </ListGroupItem>
-                                )
-                            }
-
-                            return null
-                        })
-                    }
-                </ListGroup>
-            </React.Fragment>
-        )
-    }
-}
+const Group = ({ category }) => (
+    <React.Fragment>
+        <PanelTitle
+            caption={category.caption}
+            count={category.items.length}
+        />
+        <ListGroup>
+            {
+                category.items.map(tool => {
+                    return (
+                        <ListGroupItem key={tool.id}
+                            className="clearfix"
+                            href={tool.url}
+                            target="_blank"
+                        >
+                            <div className="pull-left">
+                                <b>{tool.name}</b>
+                            </div>
+                            <div className="pull-right">
+                                <small className="text-muted">{tool.describe}</small>
+                            </div>
+                        </ListGroupItem>
+                    )
+                })
+            }
+        </ListGroup>
+    </React.Fragment>
+)
 
 export default Group

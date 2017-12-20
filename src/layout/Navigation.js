@@ -12,7 +12,7 @@ import {
 } from 'react-router-bootstrap'
 
 const Navigation = () => (
-    <Navbar inverse staticTop fluid>
+    <Navbar inverse staticTop fluid collapseOnSelect>
         <Navbar.Header>
             <Navbar.Brand>
                 <Link to="/"><span className="glyphicon glyphicon-globe" /> 开发中心</Link>
@@ -22,10 +22,10 @@ const Navigation = () => (
         <Navbar.Collapse>
             <Nav>
                 <LinkContainer exact to="/">
-                    <NavItem eventKey={1}><span className="glyphicon glyphicon-grain" /> 环境</NavItem>
+                    <NavItem eventKey={1}><span className="glyphicon glyphicon-grain" /> 软件</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/tool">
-                    <NavItem eventKey={2}><span className="glyphicon glyphicon-wrench" /> 工具</NavItem>
+                    <NavItem eventKey={2}><span className="glyphicon glyphicon-wrench" /> 在线工具</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/stack">
                     <NavItem eventKey={3}><span className="glyphicon glyphicon-pushpin" /> 技术栈</NavItem>

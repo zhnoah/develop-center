@@ -60,7 +60,10 @@ export default [
                 downloadFlag: false,
                 downloadUrl: 'https://www.microsoft.com/zh-CN/download/details.aspx?id=5201',
                 optionUrl: '',
-            }, {
+            },
+        ],
+        more: [
+            {
                 id: 'xunlei',
                 caption: '迅雷极速版',
                 loginFlag: true,
@@ -69,10 +72,7 @@ export default [
                 downloadFlag: false,
                 downloadUrl: 'cloud-disk',
                 optionUrl: '',
-            },
-        ],
-        more: [
-            {
+            }, {
                 id: 'enpass',
                 caption: 'Enpass',
                 loginFlag: true,

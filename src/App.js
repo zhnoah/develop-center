@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
 } from 'react-router-dom'
 
@@ -13,7 +13,7 @@ import Tutorial from './Tutorial'
 import Code from './Code'
 
 const About = () => (
-    <div>
+    <div className="container">
         <h2>About</h2>
     </div>
 )

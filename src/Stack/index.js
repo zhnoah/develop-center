@@ -43,7 +43,7 @@ class Stack extends React.Component {
 
         // 读
         this.db.getItem('node').then(res => {
-            console.log(res)
+            // console.log(res)
         })
     }
 

@@ -55,7 +55,9 @@ class Environment extends React.Component {
                 {
                     data.map((category) => {
                         return (
-                            <Group key={category.id} category={category} />
+                            <Group key={category.id}
+                                category={category}
+                            />
                         )
                     })
                 }
