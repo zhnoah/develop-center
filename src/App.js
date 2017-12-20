@@ -20,7 +20,7 @@ const About = () => (
 
 const App = () => (
     <Router>
-        <div>
+        <React.Fragment>
             <Navigation />
             <Route exact path="/" component={Environment} />
             <Route path="/tool" component={Tool} />
@@ -28,7 +28,7 @@ const App = () => (
             <Route path="/tutorial" component={Tutorial} />
             <Route path="/code" component={Code} />
             <Route path="/about" component={About} />
-        </div>
+        </React.Fragment>
     </Router>
 )
 

@@ -29,7 +29,7 @@ class Group extends React.Component {
         const count = category.softwares.length + category.more.length
 
         return (
-            <div>
+            <React.Fragment>
                 <PanelTitle caption={category.caption} count={count} />
                 <ListGroup>
                     {
@@ -57,7 +57,7 @@ class Group extends React.Component {
                         handleToggle={this.handleToggle}
                     />
                 }
-            </div>
+            </React.Fragment>
         )
     }
 }
