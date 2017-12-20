@@ -8,7 +8,7 @@ import localforage from 'localforage'
 // import Pin from './react.pin'
 import './index.css'
 import Footer from '../common/Footer'
-import { stacks, categories } from './stacks'
+import { stacks, categories } from './data'
 import Group from './Group'
 
 class Stack extends React.Component {

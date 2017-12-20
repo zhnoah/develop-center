@@ -3,8 +3,8 @@ import React from 'react'
 import './index.css'
 import TabButton from '../common/TabButton'
 import Footer from '../common/Footer'
-import winData from './systems/win'
-import macData from './systems/mac'
+import winData from './data/win'
+import macData from './data/mac'
 import Group from './Group'
 
 class Environment extends React.Component {
