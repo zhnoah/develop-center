@@ -25,13 +25,13 @@ const Navigation = () => (
                     <NavItem eventKey={1}><span className="glyphicon glyphicon-grain" /> 软件</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/tool">
-                    <NavItem eventKey={2}><span className="glyphicon glyphicon-wrench" /> 在线工具</NavItem>
+                    <NavItem eventKey={2}><span className="glyphicon glyphicon-wrench" /> 工具</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/stack">
-                    <NavItem eventKey={3}><span className="glyphicon glyphicon-pushpin" /> 技术栈</NavItem>
+                    <NavItem eventKey={3}><span className="glyphicon glyphicon-pushpin" /> 类库</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/tutorial">
-                    <NavItem eventKey={4}><span className="glyphicon glyphicon-education" /> 教程</NavItem>
+                    <NavItem eventKey={4}><span className="glyphicon glyphicon-education" /> 学习</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/code">
                     <NavItem eventKey={5}><span className="glyphicon glyphicon-send" /> 代码</NavItem>

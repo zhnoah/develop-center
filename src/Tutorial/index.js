@@ -1,13 +1,17 @@
 import React from 'react'
 
 import TabButton from '../common/TabButton'
+import blogData from './data/blog'
+import noteData from './data/note'
+import Group from '../Tool/Group'
 
 class Tutorial extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            category: 'doc'
+            category: 'blog'
         }
+        this.onChange = this.onChange.bind(this)
     }
 
     onChange(category) {
@@ -18,12 +22,14 @@ class Tutorial extends React.Component {
 
     render() {
 
+        let data = []
+
+        if (this.state.category === 'blog') data = blogData
+        if (this.state.category === 'note') data = noteData
+
         const options = [{
-            id: 'doc',
-            name: '文档'
-        }, {
             id: 'blog',
-            name: '博文'
+            name: '阅读'
         }, {
             id: 'note',
             name: '笔记'
@@ -35,16 +41,15 @@ class Tutorial extends React.Component {
                     onChange={this.onChange}
                     options={options}
                 />
-                {/* {
+                {
                     data.map((category) => {
                         return (
-                            <Group key={category.id} category={category} />
+                            <Group key={category.id}
+                                category={category}
+                            />
                         )
                     })
-                } */}
-                {/* <p className="environment-footer">
-
-                </p> */}
+                }
             </div>
         )
     }

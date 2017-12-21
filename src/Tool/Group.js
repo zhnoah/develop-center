@@ -23,6 +23,12 @@ const Group = ({ category }) => (
                         >
                             <div className="pull-left">
                                 <b>{tool.name}</b>
+                                {
+                                    !!tool.translation &&
+                                        (<small className="text-muted">(
+                                            <a href={tool.translation} target="_blank">译文</a>
+                                        )</small>)
+                                }
                             </div>
                             <div className="pull-right">
                                 <small className="text-muted">{tool.describe}</small>

@@ -1,25 +1,4 @@
 export default [{
-    caption: '文档',
-    id: 'doc',
-    items: [
-        {
-            name: 'DevDocs API Documentation',
-            id: 'devdocs',
-            url: 'http://devdocs.io/',
-            describe: '文档集合',
-        }, {
-            name: 'Devhints',
-            id: 'devhints',
-            url: 'https://devhints.io/',
-            describe: '代码片段合集',
-        }, {
-            name: 'jQuery API 中文文档',
-            id: 'jqueryapi',
-            url: 'http://www.css88.com/jqapi-1.9/',
-            describe: 'jQuery 中文文档',
-        },
-    ]
-}, {
     caption: '格式转换',
     id: 'cover',
     items: [
@@ -41,8 +20,30 @@ export default [{
         },
     ]
 }, {
-    caption: '工具',
-    id: 'tool',
+    caption: '特性支持',
+    id: 'support',
+    items: [
+        {
+            name: 'Can I use',
+            id: 'caniuse',
+            categories: ['code'],
+            url: 'https://caniuse.com/',
+            describe: '浏览器特性支持查询',
+        }, {
+            name: 'ES6-Checker',
+            id: 'es6checker',
+            url: 'http://ruanyf.github.io/es-checker/index.cn.html',
+            describe: '当前浏览器 ES6 特性支持列表',
+        }, {
+            name: 'ECMAScript compatibility table',
+            id: 'compatibilitytable',
+            url: 'https://kangax.github.io/compat-table/es6/',
+            describe: 'ES 在各浏览器上特性支持列表',
+        },
+    ]
+}, {
+    caption: '其它',
+    id: 'other',
     items: [
         {
             name: 'BootCDN',
@@ -70,28 +71,6 @@ export default [{
             id: 'jquerysourceviewer',
             url: 'https://j11y.io/jquery/#v=1.11.2',
             describe: 'jQuery 源码查看',
-        }, 
-    ]
-}, {
-    caption: '特性支持',
-    id: 'support',
-    items: [
-        {
-            name: 'Can I use',
-            id: 'caniuse',
-            categories: ['code'],
-            url: 'https://caniuse.com/',
-            describe: '浏览器特性支持查询',
-        }, {
-            name: 'ES6-Checker',
-            id: 'es6checker',
-            url: 'http://ruanyf.github.io/es-checker/index.cn.html',
-            describe: '当前浏览器 ES6 特性支持列表',
-        }, {
-            name: 'ECMAScript compatibility table',
-            id: 'compatibilitytable',
-            url: 'https://kangax.github.io/compat-table/es6/',
-            describe: 'ES 在各浏览器上特性支持列表',
         },
     ]
 }, {
