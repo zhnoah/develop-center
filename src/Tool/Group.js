@@ -14,27 +14,31 @@ const Group = ({ category }) => (
         />
         <ListGroup>
             {
-                category.items.map(tool => {
-                    return (
-                        <ListGroupItem key={tool.id}
-                            className="clearfix"
-                            href={tool.url}
-                            target="_blank"
-                        >
-                            <div className="pull-left">
+                category.items.map((tool, index) => {
+
+                    if (tool.translation) {
+
+                        return (
+                            <ListGroupItem style={{ display: 'flex' }} key={index}>
+                                <div style={{ flex: 1 }}>
+                                    <a href={tool.url} target="_blank"><b>{tool.name}</b></a>
+                                </div>
+                                <div>
+                                    <a href={tool.translation} target="_blank">译文</a>
+                                </div>
+                            </ListGroupItem>
+                        )
+                    } else {
+                        return (
+                            <ListGroupItem key={index}
+                                href={tool.url}
+                                target="_blank"
+                            >
                                 <b>{tool.name}</b>
-                                {
-                                    !!tool.translation &&
-                                        (<small className="text-muted">(
-                                            <a href={tool.translation} target="_blank">译文</a>
-                                        )</small>)
-                                }
-                            </div>
-                            <div className="pull-right">
-                                <small className="text-muted">{tool.describe}</small>
-                            </div>
-                        </ListGroupItem>
-                    )
+                            </ListGroupItem>
+                        )
+                    }
+
                 })
             }
         </ListGroup>

@@ -64,15 +64,6 @@ export default [
         ],
         more: [
             {
-                id: 'xunlei',
-                caption: '迅雷极速版',
-                loginFlag: true,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'cloud-disk',
-                optionUrl: '',
-            }, {
                 id: 'enpass',
                 caption: 'Enpass',
                 loginFlag: true,
@@ -91,13 +82,13 @@ export default [
                 downloadUrl: 'http://player.qq.com/',
                 optionUrl: '',
             }, {
-                id: 'wps',
-                caption: 'WPS Office',
-                loginFlag: false,
+                id: 'xunlei',
+                caption: '迅雷极速版',
+                loginFlag: true,
                 configFlag: false,
                 licenseFlag: false,
                 downloadFlag: false,
-                downloadUrl: 'http://www.wps.cn/',
+                downloadUrl: 'cloud-disk',
                 optionUrl: '',
             }, {
                 id: 'pan',
@@ -109,13 +100,13 @@ export default [
                 downloadUrl: 'http://pan.baidu.com/download',
                 optionUrl: '',
             }, {
-                id: 'diskgenius',
-                caption: 'DiskGenius',
+                id: 'wps',
+                caption: 'WPS Office',
                 loginFlag: false,
                 configFlag: false,
                 licenseFlag: false,
                 downloadFlag: false,
-                downloadUrl: 'cloud-disk',
+                downloadUrl: 'http://www.wps.cn/',
                 optionUrl: '',
             }, {
                 id: 'jijiuxiang',
@@ -129,6 +120,15 @@ export default [
             }, {
                 id: 'huifu',
                 caption: '360 文件恢复',
+                loginFlag: false,
+                configFlag: false,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'cloud-disk',
+                optionUrl: '',
+            }, {
+                id: 'diskgenius',
+                caption: 'DiskGenius',
                 loginFlag: false,
                 configFlag: false,
                 licenseFlag: false,
@@ -245,6 +245,15 @@ export default [
                 downloadUrl: 'ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/',
                 optionUrl: '',
             }, {
+                id: 'mockups',
+                caption: 'Balsamiq Mockups',
+                loginFlag: false,
+                configFlag: false,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'https://balsamiq.com/download/',
+                optionUrl: '',
+            }, {
                 id: 'ai',
                 caption: 'Illustrator CS3',
                 loginFlag: false,
@@ -263,13 +272,13 @@ export default [
                 downloadUrl: 'http://luci.criosweb.ro/riot/',
                 optionUrl: '',
             }, {
-                id: 'mockups',
-                caption: 'Balsamiq Mockups',
+                id: 'formatfactory',
+                caption: '格式工厂',
                 loginFlag: false,
                 configFlag: false,
                 licenseFlag: false,
                 downloadFlag: false,
-                downloadUrl: 'https://balsamiq.com/download/',
+                downloadUrl: 'http://www.pcfreetime.com/formatfactory/CN/index.html',
                 optionUrl: '',
             }, {
                 id: 'vidown',
@@ -279,15 +288,6 @@ export default [
                 licenseFlag: false,
                 downloadFlag: false,
                 downloadUrl: 'http://www.vidown.cn/',
-                optionUrl: '',
-            }, {
-                id: 'formatfactory',
-                caption: '格式工厂',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'http://www.pcfreetime.com/formatfactory/CN/index.html',
                 optionUrl: '',
             },
         ]
@@ -318,39 +318,39 @@ export default [
         ],
         more: []
     },
-    {
-        id: 'mobile',
-        caption: 'Mobile App 开发',
-        softwares: [
-            {
-                id: 'jdk',
-                caption: 'Java SE Development Kit',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'http://www.oracle.com/technetwork/java/javase/downloads/index.html',
-                optionUrl: '',
-            }, {
-                id: 'python',
-                caption: 'Python',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://www.python.org/downloads/',
-                optionUrl: '',
-            }, {
-                id: 'androidstudio',
-                caption: 'Android Studio',
-                loginFlag: false,
-                configFlag: true,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://developer.android.com/studio/index.html',
-                optionUrl: '',
-            },
-        ],
-        more: []
-    }
+    // {
+    //     id: 'mobile',
+    //     caption: 'Mobile App 开发',
+    //     softwares: [
+    //         {
+    //             id: 'jdk',
+    //             caption: 'Java SE Development Kit',
+    //             loginFlag: false,
+    //             configFlag: false,
+    //             licenseFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'http://www.oracle.com/technetwork/java/javase/downloads/index.html',
+    //             optionUrl: '',
+    //         }, {
+    //             id: 'python',
+    //             caption: 'Python',
+    //             loginFlag: false,
+    //             configFlag: false,
+    //             licenseFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'https://www.python.org/downloads/',
+    //             optionUrl: '',
+    //         }, {
+    //             id: 'androidstudio',
+    //             caption: 'Android Studio',
+    //             loginFlag: false,
+    //             configFlag: true,
+    //             licenseFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'https://developer.android.com/studio/index.html',
+    //             optionUrl: '',
+    //         },
+    //     ],
+    //     more: []
+    // }
 ]

@@ -15,7 +15,7 @@ const Navigation = () => (
     <Navbar inverse staticTop fluid collapseOnSelect>
         <Navbar.Header>
             <Navbar.Brand>
-                <Link to="/"><span className="glyphicon glyphicon-globe" /> 开发中心</Link>
+                <Link to="/"><span className="glyphicon glyphicon-globe" /> Develop Center</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
         </Navbar.Header>
@@ -28,7 +28,7 @@ const Navigation = () => (
                     <NavItem eventKey={2}><span className="glyphicon glyphicon-wrench" /> 工具</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/stack">
-                    <NavItem eventKey={3}><span className="glyphicon glyphicon-pushpin" /> 类库</NavItem>
+                    <NavItem eventKey={3}><span className="glyphicon glyphicon-pushpin" /> 技术栈</NavItem>
                 </LinkContainer>
                 <LinkContainer to="/tutorial">
                     <NavItem eventKey={4}><span className="glyphicon glyphicon-education" /> 学习</NavItem>

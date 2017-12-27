@@ -29,7 +29,7 @@ class Tutorial extends React.Component {
 
         const options = [{
             id: 'blog',
-            name: '阅读'
+            name: '博文'
         }, {
             id: 'note',
             name: '笔记'
