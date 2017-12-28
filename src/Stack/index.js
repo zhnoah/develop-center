@@ -1,18 +1,50 @@
 import React from 'react'
 
-// import './index.css'
 import Footer from '../common/Footer'
-import stackData from './data/stack'
+import TabButton from '../common/TabButton'
+import frontData from './data/front'
+import backData from './data/back'
 import Group from '../Tool/Group'
 
 class Stack extends React.Component {
-    
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            category: 'front'
+        }
+        this.onChange = this.onChange.bind(this)
+    }
+
+    onChange(category) {
+        this.setState({
+            category
+        })
+    }
+
     render() {
+
+        let data = []
+
+        if (this.state.category === 'front') data = frontData
+        if (this.state.category === 'back') data = backData
+
+        const options = [{
+            id: 'front',
+            name: '前端'
+        }, {
+            id: 'back',
+            name: '后端'
+        },]
 
         return (
             <div className="container">
-               {
-                    stackData.map((category) => {
+                <TabButton defaultValue={this.state.category}
+                    onChange={this.onChange}
+                    options={options}
+                />
+                {
+                    data.map((category) => {
                         return (
                             <Group key={category.id}
                                 category={category}

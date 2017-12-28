@@ -16,28 +16,24 @@ const Group = ({ category }) => (
             {
                 category.items.map((tool, index) => {
 
-                    if (tool.translation) {
-
                         return (
-                            <ListGroupItem style={{ display: 'flex' }} key={index}>
-                                <div style={{ flex: 1 }}>
-                                    <a href={tool.url} target="_blank"><b>{tool.name}</b></a>
-                                </div>
-                                <div>
-                                    <a href={tool.translation} target="_blank">译文</a>
-                                </div>
-                            </ListGroupItem>
-                        )
-                    } else {
-                        return (
-                            <ListGroupItem key={index}
+                            <ListGroupItem style={{ display: 'flex' }}
+                                key={index}
                                 href={tool.url}
                                 target="_blank"
                             >
-                                <b>{tool.name}</b>
+                                <div style={{ flex: 1 }}>
+                                    <b>{tool.name}</b>
+                                </div>
+                                {
+                                    tool.describe && (
+                                        <div className="text-muted">
+                                            <small>{tool.describe}</small>
+                                        </div>
+                                    )
+                                }
                             </ListGroupItem>
                         )
-                    }
 
                 })
             }
