@@ -48,8 +48,8 @@ export default [
                 loginFlag: false,
                 configFlag: false,
                 licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://www.google.com/intl/zh-CN/ime/pinyin/',
+                downloadFlag: true,
+                downloadUrl: 'http://dl.google.com/pinyin/v2/GooglePinyinInstaller.exe',
                 optionUrl: '',
             }, {
                 id: 'mse',
