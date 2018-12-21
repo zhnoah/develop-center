@@ -63,7 +63,10 @@ export default [
                 downloadFlag: false,
                 downloadUrl: '',
                 optionUrl: '',
-            }, {
+            },
+        ],
+        more: [
+            {
                 id: 'enpass',
                 caption: 'Enpass',
                 loginFlag: true,
@@ -73,10 +76,7 @@ export default [
                 downloadFlag: false,
                 downloadUrl: 'https://www.enpass.io/downloads/',
                 optionUrl: '',
-            },
-        ],
-        more: [
-            {
+            }, {
                 id: 'player',
                 caption: 'MPlayerX',
                 loginFlag: false,
@@ -102,27 +102,7 @@ export default [
                 downloadFlag: false,
                 downloadUrl: 'https://code.visualstudio.com/Download',
                 optionUrl: '',
-            }, {
-                id: 'sublime',
-                caption: 'Sublime Text 3',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: true,
-                storeFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'http://www.sublimetext.com/3',
-                optionUrl: '',
-            }, {
-                id: 'packagecontrol',
-                caption: 'Package Control',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                storeFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://packagecontrol.io/installation',
-                optionUrl: '',
-            }, {
+            },{
                 id: 'homebrew',
                 caption: 'Homebrew',
                 loginFlag: false,
@@ -156,6 +136,26 @@ export default [
         ],
         more: [
             {
+                id: 'sublime',
+                caption: 'Sublime Text 3',
+                loginFlag: false,
+                configFlag: false,
+                licenseFlag: true,
+                storeFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'http://www.sublimetext.com/3',
+                optionUrl: '',
+            }, {
+                id: 'packagecontrol',
+                caption: 'Package Control',
+                loginFlag: false,
+                configFlag: false,
+                licenseFlag: false,
+                storeFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'https://packagecontrol.io/installation',
+                optionUrl: '',
+            }, {
                 id: 'iterm',
                 caption: 'iTerm',
                 loginFlag: false,
@@ -238,70 +238,70 @@ export default [
             }
         ]
     },
-    {
-        id: 'node',
-        caption: 'Node.js 开发',
-        softwares: [
-            {
-                id: 'mongodb',
-                caption: 'MongoDB',
-                loginFlag: false,
-                configFlag: true,
-                licenseFlag: false,
-                storeFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://www.mongodb.com/download-center',
-                optionUrl: '',
-            }, {
-                id: 'robo',
-                caption: 'Robo 3T',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                storeFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://robomongo.org/download',
-                optionUrl: '',
-            },
-        ],
-        more: []
-    },
-    {
-        id: 'mobile',
-        caption: 'Mobile App 开发',
-        softwares: [
-            {
-                id: 'jdk',
-                caption: 'Java SE Development Kit',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                storeFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'http://www.oracle.com/technetwork/java/javase/downloads/index.html',
-                optionUrl: '',
-            }, {
-                id: 'python',
-                caption: 'Python',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                storeFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://www.python.org/downloads/',
-                optionUrl: '',
-            }, {
-                id: 'androidstudio',
-                caption: 'Android Studio',
-                loginFlag: false,
-                configFlag: true,
-                licenseFlag: false,
-                storeFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://developer.android.com/studio/index.html',
-                optionUrl: '',
-            },
-        ],
-        more: []
-    }
+    // {
+    //     id: 'node',
+    //     caption: 'Node.js 开发',
+    //     softwares: [
+    //         {
+    //             id: 'mongodb',
+    //             caption: 'MongoDB',
+    //             loginFlag: false,
+    //             configFlag: true,
+    //             licenseFlag: false,
+    //             storeFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'https://www.mongodb.com/download-center',
+    //             optionUrl: '',
+    //         }, {
+    //             id: 'robo',
+    //             caption: 'Robo 3T',
+    //             loginFlag: false,
+    //             configFlag: false,
+    //             licenseFlag: false,
+    //             storeFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'https://robomongo.org/download',
+    //             optionUrl: '',
+    //         },
+    //     ],
+    //     more: []
+    // },
+    // {
+    //     id: 'mobile',
+    //     caption: 'Mobile App 开发',
+    //     softwares: [
+    //         {
+    //             id: 'jdk',
+    //             caption: 'Java SE Development Kit',
+    //             loginFlag: false,
+    //             configFlag: false,
+    //             licenseFlag: false,
+    //             storeFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'http://www.oracle.com/technetwork/java/javase/downloads/index.html',
+    //             optionUrl: '',
+    //         }, {
+    //             id: 'python',
+    //             caption: 'Python',
+    //             loginFlag: false,
+    //             configFlag: false,
+    //             licenseFlag: false,
+    //             storeFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'https://www.python.org/downloads/',
+    //             optionUrl: '',
+    //         }, {
+    //             id: 'androidstudio',
+    //             caption: 'Android Studio',
+    //             loginFlag: false,
+    //             configFlag: true,
+    //             licenseFlag: false,
+    //             storeFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'https://developer.android.com/studio/index.html',
+    //             optionUrl: '',
+    //         },
+    //     ],
+    //     more: []
+    // }
 ]

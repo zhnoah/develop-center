@@ -19,19 +19,9 @@ export default [
                 url: 'http://tool.chinaz.com/tools/jsonformat.aspx',
                 describe: '',
             }, {
-                name: 'Flexbox 代码生成',
-                id: '4',
-                url: 'http://the-echoplex.net/flexyboxes/',
-                describe: '',
-            }, {
-                name: 'jQuery 源码查看',
-                id: '5',
-                url: 'https://j11y.io/jquery/#v=1.11.2',
-                describe: '',
-            }, {
-                name: 'JavaScript 代码片段',
-                id: '7',
-                url: 'https://codepen.io/tag/rain/',
+                name: 'Url Encode/Decode',
+                id: '2',
+                url: 'http://tool.chinaz.com/tools/urlencode.aspx',
                 describe: '',
             }, {
                 name: '流量研究院',
@@ -49,20 +39,15 @@ export default [
                 url: 'http://ruanyf.github.io/es-checker/index.cn.html',
                 describe: '',
             }, {
-                name: 'JavaScript 框架/类库流行趋势',
+                name: '框架/类库流行趋势',
                 id: '11',
                 url: 'https://bestof.js.org/',
-                describe: '',
-            }, {
-                name: 'You might not need jQuery',
-                id: '12',
-                url: 'http://youmightnotneedjquery.com/',
                 describe: '',
             },
         ]
     }, {
-        caption: '格式转换',
-        id: 'cover',
+        caption: 'HTML',
+        id: 'about-html',
         items: [
             {
                 name: 'HTML to Jade',
@@ -78,6 +63,48 @@ export default [
                 name: 'Word to HTML',
                 id: '3',
                 url: 'https://word2cleanhtml.com/',
+                describe: '',
+            },
+        ]
+    }, {
+        caption: 'CSS',
+        id: 'about-css',
+        items: [
+            {
+                name: 'Flexbox 代码生成',
+                id: '1',
+                url: 'http://the-echoplex.net/flexyboxes/',
+                describe: '',
+            }, {
+                name: 'LESS to CSS',
+                id: '2',
+                url: 'http://lesscss.org/less-preview/',
+                describe: '',
+            }, {
+                name: 'Sass Color Generator',
+                id: '3',
+                url: 'http://scg.ar-ch.org/',
+                describe: '',
+            },
+        ]
+    }, {
+        caption: 'JavaScript',
+        id: 'about-js',
+        items: [
+            {
+                name: 'jQuery 源码查看',
+                id: '5',
+                url: 'https://j11y.io/jquery/#v=1.11.2',
+                describe: '',
+            }, {
+                name: 'JavaScript 代码片段',
+                id: '7',
+                url: 'https://codepen.io/tag/rain/',
+                describe: '',
+            }, {
+                name: 'You might not need jQuery',
+                id: '12',
+                url: 'http://youmightnotneedjquery.com/',
                 describe: '',
             },
         ]

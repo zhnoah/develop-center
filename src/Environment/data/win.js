@@ -43,6 +43,18 @@ export default [
                 downloadUrl: 'http://www.winrar.com.cn/download.htm',
                 optionUrl: '',
             }, {
+                id: 'wox',
+                caption: 'Wox',
+                loginFlag: false,
+                configFlag: false,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'http://www.wox.one/',
+                optionUrl: '',
+            },
+        ],
+        more: [
+            {
                 id: 'pinyin',
                 caption: 'Google 拼音输入法',
                 loginFlag: false,
@@ -60,10 +72,7 @@ export default [
                 downloadFlag: false,
                 downloadUrl: 'https://www.microsoft.com/zh-CN/download/details.aspx?id=5201',
                 optionUrl: '',
-            },
-        ],
-        more: [
-            {
+            }, {
                 id: 'enpass',
                 caption: 'Enpass',
                 loginFlag: true,
@@ -177,6 +186,15 @@ export default [
                 downloadFlag: false,
                 downloadUrl: 'https://desktop.github.com/',
                 optionUrl: '',
+            }, {
+                id: 'svn',
+                caption: 'TortoiseSVN',
+                loginFlag: true,
+                configFlag: false,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'https://tortoisesvn.net/downloads.html',
+                optionUrl: '',
             },
         ],
         more: [
@@ -197,15 +215,6 @@ export default [
                 licenseFlag: false,
                 downloadFlag: false,
                 downloadUrl: 'https://packagecontrol.io/installation',
-                optionUrl: '',
-            }, {
-                id: 'svn',
-                caption: 'TortoiseSVN',
-                loginFlag: true,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://tortoisesvn.net/downloads.html',
                 optionUrl: '',
             }, {
                 id: 'fiddler',
@@ -292,32 +301,32 @@ export default [
             },
         ]
     },
-    {
-        id: 'node',
-        caption: 'Node.js 开发',
-        softwares: [
-            {
-                id: 'mongodb',
-                caption: 'MongoDB',
-                loginFlag: false,
-                configFlag: true,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://www.mongodb.com/download-center',
-                optionUrl: '',
-            }, {
-                id: 'robo',
-                caption: 'Robo 3T',
-                loginFlag: false,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://robomongo.org/download',
-                optionUrl: '',
-            },
-        ],
-        more: []
-    },
+    // {
+    //     id: 'node',
+    //     caption: 'Node.js 开发',
+    //     softwares: [
+    //         {
+    //             id: 'mongodb',
+    //             caption: 'MongoDB',
+    //             loginFlag: false,
+    //             configFlag: true,
+    //             licenseFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'https://www.mongodb.com/download-center',
+    //             optionUrl: '',
+    //         }, {
+    //             id: 'robo',
+    //             caption: 'Robo 3T',
+    //             loginFlag: false,
+    //             configFlag: false,
+    //             licenseFlag: false,
+    //             downloadFlag: false,
+    //             downloadUrl: 'https://robomongo.org/download',
+    //             optionUrl: '',
+    //         },
+    //     ],
+    //     more: []
+    // },
     // {
     //     id: 'mobile',
     //     caption: 'Mobile App 开发',
