@@ -17,7 +17,8 @@ class MoreToggle extends React.Component {
     render() {
         return (
             <div className="text-center more">
-                <a role="button"
+                <button
+                    className="btn btn-xs btn-link"
                     onClick={this.onToggle}
                 > {this.props.content}
                     {
@@ -25,7 +26,7 @@ class MoreToggle extends React.Component {
                             <span className="glyphicon glyphicon-menu-up" /> :
                             <span className="glyphicon glyphicon-menu-down" />
                     }
-                </a>
+                </button>
             </div>
         )
     }

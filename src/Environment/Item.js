@@ -71,6 +71,7 @@ class Item extends React.Component {
                                     <a href={software.downloadUrl}
                                         title="跳转到下载链接"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     ><span className="glyphicon glyphicon-link" /></a>
                                 )
                     }
