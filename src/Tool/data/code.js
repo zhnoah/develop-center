@@ -23,12 +23,14 @@ export default [
                 id: '2',
                 url: 'http://tool.chinaz.com/tools/urlencode.aspx',
                 describe: '',
-            }, {
-                name: '流量研究院',
-                id: '8',
-                url: 'http://tongji.baidu.com/data/browser',
-                describe: '',
-            }, {
+            },
+            // {
+            //     name: '流量研究院',
+            //     id: '8',
+            //     url: 'http://tongji.baidu.com/data/browser',
+            //     describe: '',
+            // },
+            {
                 name: 'Can I use',
                 id: '9',
                 url: 'https://caniuse.com/',
@@ -38,12 +40,13 @@ export default [
                 id: '10',
                 url: 'http://ruanyf.github.io/es-checker/index.cn.html',
                 describe: '',
-            }, {
-                name: '框架/类库流行趋势',
-                id: '11',
-                url: 'https://bestof.js.org/',
-                describe: '',
             },
+            // {
+            //     name: '框架/类库流行趋势',
+            //     id: '11',
+            //     url: 'https://bestof.js.org/',
+            //     describe: '',
+            // },
         ]
     }, {
         caption: 'HTML',

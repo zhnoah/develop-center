@@ -33,15 +33,15 @@ const Navigation = () => (
                 <LinkContainer to="/tutorial">
                     <NavItem eventKey={4}><span className="glyphicon glyphicon-education" /> 学习</NavItem>
                 </LinkContainer>
-                <LinkContainer to="/code">
+                {/* <LinkContainer to="/code">
                     <NavItem eventKey={5}><span className="glyphicon glyphicon-send" /> 代码</NavItem>
-                </LinkContainer>
+                </LinkContainer> */}
             </Nav>
-            <Nav pullRight>
+            {/* <Nav pullRight>
                 <LinkContainer to="/about">
                     <NavItem eventKey={6}><span className="glyphicon glyphicon-user" /> 关于</NavItem>
                 </LinkContainer>
-            </Nav>
+            </Nav> */}
         </Navbar.Collapse>
     </Navbar>
 )

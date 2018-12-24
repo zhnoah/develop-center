@@ -1,64 +1,124 @@
 export default [
     {
-        caption: '基础',
-        id: 'Basic',
+        caption: 'Roadmap',
+        id: 'Core',
+        items: [
+            {
+                name: 'React',
+                url: 'https://reactjs.org/',
+                describe: '核心库'
+            }, {
+                name: 'Developer Roadmap',
+                url: 'https://github.com/kamranahmedse/developer-roadmap',
+                describe: ''
+            }, {
+                name: 'React Developer Roadmap',
+                url: 'https://github.com/adam-golab/react-developer-roadmap',
+                describe: ''
+            }, {
+                name: 'Best of JavaScript',
+                url: 'https://bestofjs.org/',
+                describe: ''
+            }
+        ]
+    }, {
+        caption: '脚手架',
+        id: 'Scaffold',
         items: [
             {
                 name: 'Create React App',
-                url: 'https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md',
-                describe: '脚手架'
+                url: 'https://github.com/facebook/create-react-app',
+                describe: '单页应用'
             }, {
-                name: 'React',
-                url: 'https://reactjs.org/docs/hello-world.html',
-                describe: '基础库'
+                name: 'Storybook',
+                url: 'https://github.com/storybooks/storybook',
+                describe: '组件开发'
             }, {
-                name: 'PropTypes',
-                url: 'https://github.com/facebook/prop-types#usage',
-                describe: '数据类型验证'
+                name: 'Next.js',
+                url: 'https://github.com/zeit/next.js',
+                describe: '服务端渲染'
             }, {
-                name: 'React Router',
-                url: 'https://reacttraining.com/react-router/web/guides/quick-start',
-                describe: '路由'
+                name: 'Gatsby',
+                url: 'https://github.com/gatsbyjs/gatsby',
+                describe: '静态网站'
             }, {
-                name: 'Fetch',
-                url: 'https://github.com/github/fetch#usage',
-                describe: '数据请求'
+                name: 'Docz',
+                url: 'https://github.com/pedronauck/docz',
+                describe: '文档'
             }
         ]
     }, {
-        caption: '状态',
-        id: 'Data',
-        items: [
-            {
-                name: 'Immutable.js',
-                url: 'http://facebook.github.io/immutable-js/',
-                describe: '不可变数据'
-            }, {
-                name: 'React Redux',
-                url: 'https://redux.js.org/docs/basics/UsageWithReact.html',
-                describe: '状态管理'
-            }, {
-                name: 'Redux-Saga',
-                url: 'https://redux-saga.js.org',
-                describe: '异步数据流控制'
-            }
-        ]
-    }, {
-        caption: 'UI',
+        caption: 'UI Kit',
         id: 'UI',
         items: [
             {
-                name: 'styled-components',
-                url: 'https://www.styled-components.com/docs/basics#getting-started',
+                name: 'Ant Design',
+                url: 'https://ant.design',
+                describe: 'Web'
+            }, {
+                name: 'Ant Design Pro',
+                url: 'https://pro.ant.design',
+                describe: 'Web Admin'
+            }, {
+                name: 'Ant Design Mobile',
+                url: 'https://mobile.ant.design',
+                describe: 'Mobile Web'
+            }
+        ]
+    }, {
+        caption: '功能库',
+        id: 'Basic',
+        items: [
+            {
+                name: 'PropTypes',
+                url: 'https://github.com/facebook/prop-types',
+                describe: '数据类型验证'
+            }, {
+                name: 'React Router',
+                url: 'https://github.com/ReactTraining/react-router',
+                describe: '路由'
+            }, {
+                name: 'Fetch',
+                url: 'https://github.com/github/fetch',
+                describe: '数据请求'
+            }, {
+                name: 'React Helmet',
+                url: 'https://github.com/nfl/react-helmet',
+                describe: '文档头管理'
+            }, {
+                name: 'Immutable.js',
+                url: 'https://github.com/facebook/immutable-js',
+                describe: '不可变数据'
+            }, {
+                name: 'Classnames',
+                url: 'https://github.com/JedWatson/classnames',
+                describe: '类名拼接'
+            }, {
+                name: 'Emotion',
+                url: 'https://github.com/emotion-js/emotion',
                 describe: 'CSS in JS'
+            }
+        ]
+    }, {
+        caption: '状态管理',
+        id: 'Data',
+        items: [
+            {
+                name: 'Redux',
+                url: 'https://github.com/reduxjs/redux',
+                describe: '状态管理'
             }, {
-                name: 'React-Bootstrap',
-                url: 'https://react-bootstrap.github.io/components.html',
-                describe: 'PC Web UI'
+                name: 'React Redux',
+                url: 'https://github.com/reduxjs/react-redux',
+                describe: '状态管理'
             }, {
-                name: 'React-WeUI',
-                url: 'https://weui.github.io/react-weui/docs/#/react-weui/docs/page/1/articles/0',
-                describe: 'Mobile Web UI'
+                name: 'Redux Thunk',
+                url: 'https://github.com/reduxjs/redux-thunk',
+                describe: '异步数据流控制'
+            }, {
+                name: 'Redux Saga',
+                url: 'https://github.com/redux-saga/redux-saga',
+                describe: '异步数据流控制'
             }
         ]
     }, {
@@ -67,11 +127,11 @@ export default [
         items: [
             {
                 name: 'Jest',
-                url: 'http://facebook.github.io/jest/docs/en/getting-started.html',
+                url: 'https://github.com/facebook/jest',
                 describe: '单元测试框架'
             }, {
                 name: 'Enzyme',
-                url: 'http://airbnb.io/enzyme/',
+                url: 'https://github.com/airbnb/enzyme',
                 describe: '测试工具库'
             }
         ]
@@ -80,16 +140,12 @@ export default [
         id: 'Other',
         items: [
             {
-                name: 'Next.js',
-                url: 'https://github.com/zeit/next.js/',
-                describe: '服务端渲染'
-            }, {
                 name: 'Cordova',
-                url: 'https://cordova.apache.org/docs/en/7.x/guide/cli/index.html',
+                url: 'https://cordova.apache.org/',
                 describe: 'Mobile App 构建'
             }, {
                 name: 'Crosswalk',
-                url: 'https://crosswalk-project.org/documentation/getting_started.html',
+                url: 'https://crosswalk-project.org/',
                 describe: 'WebView'
             }
         ]
