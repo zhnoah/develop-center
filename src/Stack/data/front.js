@@ -100,6 +100,24 @@ export default [
             }
         ]
     }, {
+        caption: '辅助工具',
+        id: 'Tool',
+        items: [
+            {
+                name: 'Prettier',
+                url: 'https://github.com/prettier/prettier',
+                describe: '格式化代码'
+            }, {
+                name: 'Source Map Explorer',
+                url: 'https://github.com/danvk/source-map-explorer',
+                describe: '分析包大小'
+            }, {
+                name: 'Flow',
+                url: 'https://github.com/facebook/flow',
+                describe: '静态类型检查'
+            }
+        ]
+    }, {
         caption: '状态管理',
         id: 'Data',
         items: [
