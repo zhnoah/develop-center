@@ -48,6 +48,20 @@ export default [
             }
         ]
     }, {
+        caption: '辅助工具',
+        id: 'Tool',
+        items: [
+            {
+                name: 'Prettier',
+                url: 'https://github.com/prettier/prettier',
+                describe: '格式化代码'
+            }, {
+                name: 'Source Map Explorer',
+                url: 'https://github.com/danvk/source-map-explorer',
+                describe: '分析包大小'
+            }
+        ]
+    }, {
         caption: 'UI Kit',
         id: 'UI',
         items: [
@@ -74,6 +88,10 @@ export default [
                 url: 'https://github.com/facebook/prop-types',
                 describe: '数据类型验证'
             }, {
+                name: 'Flow',
+                url: 'https://github.com/facebook/flow',
+                describe: '静态类型检查'
+            }, {
                 name: 'React Router',
                 url: 'https://github.com/ReactTraining/react-router',
                 describe: '路由'
@@ -97,24 +115,6 @@ export default [
                 name: 'Emotion',
                 url: 'https://github.com/emotion-js/emotion',
                 describe: 'CSS in JS'
-            }
-        ]
-    }, {
-        caption: '辅助工具',
-        id: 'Tool',
-        items: [
-            {
-                name: 'Prettier',
-                url: 'https://github.com/prettier/prettier',
-                describe: '格式化代码'
-            }, {
-                name: 'Source Map Explorer',
-                url: 'https://github.com/danvk/source-map-explorer',
-                describe: '分析包大小'
-            }, {
-                name: 'Flow',
-                url: 'https://github.com/facebook/flow',
-                describe: '静态类型检查'
             }
         ]
     }, {
