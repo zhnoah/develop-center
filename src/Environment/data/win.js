@@ -51,7 +51,16 @@ export default [
                 downloadFlag: false,
                 downloadUrl: 'http://www.wox.one/',
                 optionUrl: '',
-            },
+            }, {
+                id: 'enpass',
+                caption: 'Enpass',
+                loginFlag: true,
+                configFlag: false,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'https://www.enpass.io/downloads/',
+                optionUrl: '',
+            }, 
         ],
         more: [
             {
@@ -71,15 +80,6 @@ export default [
                 licenseFlag: false,
                 downloadFlag: false,
                 downloadUrl: 'https://www.microsoft.com/zh-CN/download/details.aspx?id=5201',
-                optionUrl: '',
-            }, {
-                id: 'enpass',
-                caption: 'Enpass',
-                loginFlag: true,
-                configFlag: false,
-                licenseFlag: false,
-                downloadFlag: false,
-                downloadUrl: 'https://www.enpass.io/downloads/',
                 optionUrl: '',
             }, {
                 id: 'player',

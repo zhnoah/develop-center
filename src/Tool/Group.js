@@ -7,7 +7,7 @@ import {
 import PanelTitle from '../common/PanelTitle'
 
 const Group = ({ category }) => (
-    <React.Fragment>
+    <>
         <PanelTitle
             caption={category.caption}
             count={category.items.length}
@@ -38,7 +38,7 @@ const Group = ({ category }) => (
                 })
             }
         </ListGroup>
-    </React.Fragment>
+    </>
 )
 
 export default Group
