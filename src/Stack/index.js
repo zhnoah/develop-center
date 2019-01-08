@@ -31,10 +31,13 @@ class Stack extends React.Component {
 
         const options = [{
             id: 'front',
-            name: '前端'
+            name: 'Web'
+        }, {
+            id: 'mobile',
+            name: 'Mobile'
         }, {
             id: 'back',
-            name: '后端'
+            name: 'Server'
         },]
 
         return (
