@@ -55,7 +55,7 @@ export default [
         items: [
             {
                 name: 'JavaScript 秘密花园',
-                url: 'http://bonsaiden.github.io/JavaScript-Garden/zh',
+                url: 'https://bonsaiden.github.io/JavaScript-Garden/zh/',
                 describe: ''
             }, {
                 name: 'JavaScript 和事件',
