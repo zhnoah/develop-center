@@ -5,12 +5,12 @@ import {
 } from 'react-router-dom'
 
 import './App.css'
-import Navigation from './layout/Navigation'
-import Environment from './Environment'
-import Tool from './Tool'
-import Stack from './Stack'
-import Tutorial from './Tutorial'
-import Code from './Code'
+import Navigation from './components/Navigation'
+import Environment from './pages/Environment'
+import Tool from './pages/Tool'
+import Stack from './pages/Stack'
+import Tutorial from './pages/Tutorial'
+import Code from './pages/Code'
 
 const About = () => (
     <div className="container">

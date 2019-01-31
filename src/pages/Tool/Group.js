@@ -4,7 +4,7 @@ import {
     ListGroupItem,
 } from 'react-bootstrap'
 
-import PanelTitle from '../common/PanelTitle'
+import PanelTitle from '../../components/PanelTitle'
 
 const Group = ({ category }) => (
     <>

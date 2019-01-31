@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Footer from '../common/Footer'
-import TabButton from '../common/TabButton'
+import Footer from '../../components/Footer'
+import TabButton from '../../components/TabButton'
 import frontData from './data/front'
 import backData from './data/back'
 import Group from '../Tool/Group'

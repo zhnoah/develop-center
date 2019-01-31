@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TabButton from '../common/TabButton'
+import TabButton from '../../components/TabButton'
 import codeData from './data/code'
 import imageData from './data/image'
 import Group from './Group'

@@ -5,8 +5,8 @@ import {
 
 import './Group.css'
 import Item from './Item'
-import PanelTitle from '../common/PanelTitle'
-import MoreToggle from '../common/MoreToggle'
+import PanelTitle from '../../components/PanelTitle'
+import MoreToggle from '../../components/MoreToggle'
 
 class Group extends React.Component {
     constructor(props) {

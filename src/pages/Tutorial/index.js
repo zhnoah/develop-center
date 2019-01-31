@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TabButton from '../common/TabButton'
+import TabButton from '../../components/TabButton'
 import blogData from './data/blog'
 import noteData from './data/note'
 import Group from '../Tool/Group'

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TabButton from '../common/TabButton'
+import TabButton from '../../components/TabButton'
 
 class Code extends React.Component {
     constructor(props) {
