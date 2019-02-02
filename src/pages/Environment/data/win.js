@@ -301,32 +301,32 @@ export default [
             },
         ]
     },
-    // {
-    //     id: 'node',
-    //     caption: 'Node.js 开发',
-    //     softwares: [
-    //         {
-    //             id: 'mongodb',
-    //             caption: 'MongoDB',
-    //             loginFlag: false,
-    //             configFlag: true,
-    //             licenseFlag: false,
-    //             downloadFlag: false,
-    //             downloadUrl: 'https://www.mongodb.com/download-center',
-    //             optionUrl: '',
-    //         }, {
-    //             id: 'robo',
-    //             caption: 'Robo 3T',
-    //             loginFlag: false,
-    //             configFlag: false,
-    //             licenseFlag: false,
-    //             downloadFlag: false,
-    //             downloadUrl: 'https://robomongo.org/download',
-    //             optionUrl: '',
-    //         },
-    //     ],
-    //     more: []
-    // },
+    {
+        id: 'node',
+        caption: 'Node.js 开发',
+        softwares: [
+            {
+                id: 'mongodb',
+                caption: 'MongoDB',
+                loginFlag: false,
+                configFlag: true,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'https://www.mongodb.com/download-center/community',
+                optionUrl: '',
+            }, {
+                id: 'robo',
+                caption: 'Robo 3T',
+                loginFlag: false,
+                configFlag: false,
+                licenseFlag: false,
+                downloadFlag: false,
+                downloadUrl: 'https://robomongo.org/download',
+                optionUrl: '',
+            },
+        ],
+        more: []
+    },
     // {
     //     id: 'mobile',
     //     caption: 'Mobile App 开发',
